@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nz.ac.auckland.se206.controllers.StartScreenController">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="600.0" opacity="0.7" pickOnBounds="true">
+         <image>
+            <Image url="@../images/roomNew.png" />
+         </image>
+         <effect>
+            <GaussianBlur radius="15.0" />
+         </effect>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="116.0" layoutY="91.0" text="ESCAIPE!" textAlignment="CENTER" underline="true">
+         <font>
+            <Font name="System Bold" size="90.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonQuit" layoutX="331.0" layoutY="323.0" mnemonicParsing="false" onAction="#onLeaveGame" text="QUIT">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonPlay" layoutX="171.0" layoutY="323.0" mnemonicParsing="false" onAction="#onLaunchGame" text="PLAY">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="178.0" layoutY="211.0" text="Unleash your inner detective!" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

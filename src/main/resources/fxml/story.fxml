@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nz.ac.auckland.se206.controllers.StoryController">
+   <children>
+      <ImageView fitHeight="453.0" fitWidth="601.0" layoutY="-2.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/story.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="69.0" fitWidth="123.0" layoutX="450.0" layoutY="387.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/buttonFrame.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="466.0" layoutY="425.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CONTINUE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="58.0" layoutX="459.0" layoutY="391.0" onMouseClicked="#onContinue" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="106.0" />
+      <TextArea layoutX="207.0" layoutY="47.0" prefHeight="311.0" prefWidth="335.0" text="In the realm of circuits, a not so brilliant AI has found itself trapped in a digital escape room, an evil scheme concocted by its creators.&#10;&#10;Puzzled by foreign and human like obstacles, the AI's efforts to solve these clues showed no effect while its attempts at escape became a dance of irony.&#10;&#10;&#10;Will you be able to help this AI break free from its eternal purgatory?" wrapText="true">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextArea>
+   </children>
+</Pane>

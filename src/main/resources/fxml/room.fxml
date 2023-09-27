@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nz.ac.auckland.se206.controllers.RoomController">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="600.0" layoutY="1.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/gameRoom.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="56.0" fitWidth="110.0" layoutX="482.0" layoutY="434.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/buttonFrame.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="47.0" fitWidth="52.0" layoutX="537.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/cirlceButtonFrame.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="47.0" fitWidth="52.0" layoutX="489.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/cirlceButtonFrame.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="32.0" layoutX="547.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/settingsUI.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="40.0" layoutX="501.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/helpUI.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="14.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time Remaining:">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Label fx:id="roomTimerLabel" layoutX="183.0" layoutY="14.0" text="2:00">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="511.0" layoutY="449.0" text="CHAT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="47.0" layoutX="489.0" layoutY="438.0" onMouseClicked="#openChat" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="95.0" />
+      <Rectangle fx:id="roomClock" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="31.0" layoutX="404.0" layoutY="161.0" onMouseClicked="#clockClick" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="32.0" />
+      <Rectangle fx:id="roomDoor" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="113.0" layoutX="475.0" layoutY="185.0" onMouseClicked="#doorClick" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="61.0" />
+      <Rectangle fx:id="roomLamp" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="113.0" layoutX="112.0" layoutY="208.0" onMouseClicked="#lampClick" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="52.0" />
+      <Rectangle fx:id="roomTelevision" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="77.0" layoutX="366.0" layoutY="315.0" onMouseClicked="#televisionClick" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="133.0" />
+      <Rectangle fx:id="roomRug" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="77.0" layoutX="222.0" layoutY="289.0" onMouseClicked="#rugClick" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="146.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="55.0" layoutX="58.0" layoutY="280.0" onMouseClicked="#helpUser" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="52.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="46.0" layoutX="543.0" layoutY="15.0" onMouseClicked="#pauseGame" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="41.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="46.0" layoutX="495.0" layoutY="15.0" onMouseClicked="#openHelp" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="41.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="129.0" layoutX="268.0" layoutY="95.0" onMouseClicked="#bookClick" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="95.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="129.0" layoutX="68.0" layoutY="61.0" onMouseClicked="#windowClick" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="55.0" layoutX="176.0" layoutY="217.0" onMouseClicked="#helpUser" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="95.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="65.0" layoutX="354.0" layoutY="226.0" onMouseClicked="#helpUser" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="78.0" />
+      <Label fx:id="taskLabel" layoutX="14.0" layoutY="45.0" text="Task: Talk to the game master!" />
+   </children>
+</Pane>
